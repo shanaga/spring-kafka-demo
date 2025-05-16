@@ -13,3 +13,11 @@ spring:
 
 topic:
   name: demo-topic
+
+management:
+  endpoints:
+    metrics:
+      enabled: true
+    web:
+      exposure:
+        include: health,info,metrics,loggers
